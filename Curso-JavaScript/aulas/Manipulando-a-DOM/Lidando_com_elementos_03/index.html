@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <!-- Lidando com elementos em JavaScript -->
+
+    <div id="app">
+        
+        <input id="nome">
+
+        </input>
+
+        <!--
+               
+        -->
+    </div>
+
+    <script>
+       
+
+        var linkElement = document.createElement('a')
+        linkElement.setAttribute('href', 'https://google.com') 
+        linkElement.setAttribute('title', 'Site do GOOGLE') 
+
+        var textElement = document.createTextNode('Acessar ao site do Google')
+        linkElement.appendChild(textElement)
+
+
+        var containerElement = document.querySelector('#app')
+        containerElement.appendChild(linkElement)
+
+        var inputElement = document.querySelector('#nome')
+        containerElement.removeChild(inputElement)
+        
+
+
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

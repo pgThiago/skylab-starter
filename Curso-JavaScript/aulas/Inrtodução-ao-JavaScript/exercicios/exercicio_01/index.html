@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+
+    <!--  Crie uma função que dado o objeto a seguir: 
+    
+        var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+        };
+
+        Retorne o seguinte conteúdo:
+        
+        O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
+        nº 1293.
+
+     -->
+
+    <script>
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+        function getEndereco(obj){
+            return (`O usuário mora em ${obj.rua} / ${obj.uf}, no bairro ${obj.bairro}, na rua "${obj.rua}" com nº ${obj.numero}.`)
+        }
+    
+        console.log(getEndereco(endereco))
+
+    </script>
+
+</body>
+</html>

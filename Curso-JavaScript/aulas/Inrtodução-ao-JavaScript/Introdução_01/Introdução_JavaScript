@@ -1,0 +1,7 @@
+# O que é JavaScript?
+Nos permite executar scripts a partir do cliente
+da aplicação (navegador).
+Não existe conexão com banco de dados
+
+# Onde é aplicado?
+Em todos os sites, no front-end e às vezes no back-end através do NodeJS

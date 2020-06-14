@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <!-- Trabalhando com a DOM em JavaScript -->
+
+    <div id="app">
+        <input type="text" name="nome" id="nome"/>
+        <!--<input class="input" type="text" name="nome" id="nome"/> input 2-->
+        <button class="botao">Adicionar</button>
+        <!--
+               
+        -->
+    </div>
+
+    <script>
+        
+        //var inputElement = document.getElementById('nome')
+        //var inputElement = document.getElementsByTagName('input')[0]
+        //var inputElement = document.getElementsByClassName('input')
+        // Alguns retornam um vetor: class, tags.
+        //var inputElement = document.getElementsByClassName('input[name=nome]')
+
+        var inputElement = document.querySelector('input')
+        
+        var btnElement = document.querySelector('.botao')
+        
+        btnElement.onclick = function(){
+            var text = inputElement.value
+            alert(text)
+        }
+        //console.log(inputElement)
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

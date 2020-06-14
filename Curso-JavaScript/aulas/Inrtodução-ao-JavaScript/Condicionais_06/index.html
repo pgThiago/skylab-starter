@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <!-- Condicionais em JavaScript -->
+    <script>
+       
+        function retornaSexo(sexo){
+            // If else
+           /*
+            if(sexo === "M")
+                return 'Masculino'
+            else if(sexo === "F")
+                return 'Feminino'
+            else
+                return 'Não binário'
+            */
+          
+            // Switch Case
+            switch(sexo){
+                case 'M':
+                    return 'Masculino'
+                case 'F':
+                    return 'Feminino'
+                default:
+                    return 'Não binário'
+            }
+       } 
+
+       
+
+       var resultado = retornaSexo('M')
+       console.log(resultado)
+    </script>
+</body>
+</html>

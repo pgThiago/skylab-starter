@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    
+    <!-- 
+
+        Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>   
+        Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de
+
+    -->
+
+        <div id="app">
+            <input type="text" name="nome">
+            <button onClick="adicionar()">Adicionar</button>    
+        </div>
+
+    <script>
+        
+        var nomes = ["Diego", "Gabriel", "Lucas"];        
+        var app = document.querySelector('#app')
+        var ul = document.createElement('ul') 
+        
+        for(nome of nomes){
+                var li = document.createElement('li')
+                li.innerHTML += nome
+                ul.appendChild(li)
+            }
+
+            app.appendChild(ul)
+        
+        
+        function adicionar(){
+            
+            var novoNome = document.querySelector('input[name=nome]')
+            var novoNomeValor = novoNome.value
+            var li = document.createElement('li')
+            
+            li.innerHTML = novoNomeValor   
+            ul.appendChild(li)
+            
+            app.appendChild(ul)
+            
+            novoNome.value = ' '
+            
+        }   
+
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

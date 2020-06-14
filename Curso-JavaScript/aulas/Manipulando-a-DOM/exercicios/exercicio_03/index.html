@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    
+    <!-- 
+
+        A partir do seguinte vetor:
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+        ● Diego
+        ● Gabriel
+        ● Lucas      
+
+    -->
+
+        <div id="app">
+            
+        </div>
+
+    <script>
+        
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        var app = document.querySelector('#app')
+        var ul = document.createElement('ul')
+        
+        
+        for(nome of nomes){
+            var li = document.createElement('li')
+            li.innerHTML += nome
+            ul.appendChild(li)
+        }
+
+        app.appendChild(ul)
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

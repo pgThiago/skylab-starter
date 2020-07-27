@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 
-
 import styles from '../styles/style.js'
 import api from '../../services/api';
 
-
 class Main extends Component {
 
-  static navigationOptions = {
-  }
+  static navigationOptions = {}
 
   state = {
     
@@ -18,7 +15,6 @@ class Main extends Component {
     page: 1,
     
   };
-
 
   componentDidMount(){
     this.loadProducts();
@@ -77,7 +73,6 @@ class Main extends Component {
           renderItem={this.renderItem}
           onEndReached={this.loadMore}
           onEndReachedThreshold={0.1}
-
         />
 
       </View>

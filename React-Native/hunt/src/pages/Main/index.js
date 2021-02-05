@@ -4,28 +4,29 @@ import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import styles from '../styles/style.js'
 import api from '../../services/api';
 
+
 class Main extends Component {
-
+  
   static navigationOptions = {}
-
+  
   state = {
     
     productInfo: {},
     docs: [],
     page: 1,
-    
-  };
 
+  };
+  
   componentDidMount(){
     this.loadProducts();
   }
-
+  
   loadProducts = async (page = 1) => {
-
+    
     const response = await api.get(`/products?page=${page}`);
-
+    
     const { docs, ...productInfo } = response.data;
-
+    
     this.setState({ 
       docs: [...this.state.docs, ...docs],      
       productInfo, 
